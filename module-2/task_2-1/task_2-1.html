@@ -7,7 +7,43 @@
 <body>
 <script>
   /* write your code below this line  🙂 */
+ "use strict";
 
+  // Part 2 – different ways to declare
+  let empty;              // without a value
+  let a = 1, b = 2;       // two on one line
+
+  // Part 3 – variables and constants (different data types)
+  let catAge = 3;         // integer
+  const pi = 3.14;        // decimal
+  let catName = "Gigi";   // text
+  const catLegs = 4;      // integer (constant)
+
+  // Part 3 – an object
+  const myCat = {
+    name: "Cleo",
+    age: 2,
+    color: "seal tabby point Neva Masquerade",
+  };
+
+  // print to the console
+  console.log(catAge);
+  console.log(pi);
+  console.log(catName);
+  console.log(catLegs);
+  console.log(myCat);
+
+  catAge = 4;             // change a variable
+  console.log(catAge);
+
+  // Part 4 – without a keyword I get a ReferenceError under "use strict".
+  // Fixed by adding const in front.
+  // valuePI = 3.14;      // ReferenceError: valuePI is not defined
+  const valuePI = 3.14;
+  console.log(valuePI);
+
+  // Part 5 – changing a constant gives an error:
+  // pi = 3.15;           // TypeError: Assignment to constant variable.
 </script>
 </body>
 </html>
