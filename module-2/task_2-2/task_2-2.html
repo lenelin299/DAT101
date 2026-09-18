@@ -10,33 +10,56 @@
       <span id="txtOut"></span>
     </div>
     <ol>
-      <li>Where should you use constants, and where should you use variables? Can they all be constants?</li>
+      <li>1. Where should you use constants, and where should you use variables? Can they all be constants?</li>
       <p>
-				Replace this with you answer
+			Constants should be used for values that doesnt change after they are set (Const is a promise to JS that this value will never change). Fixed factors such as days in a week, months in a year
+      and hours in a day. Also calculations that are done once. Variables should be used for values that change, such as age, todays date etc. 
+      Both are boxes, but const has a sealed lid and let has a open lid. 
+      
+      No, they can not all be constants because the const does not allow a new value. Some values must change, like remainder, while the program runs. 
+
 			</p>
-      <li>How do parentheses affect the arithmetic outcome of an expression?</li>
+      <li>2. How do parentheses affect the arithmetic outcome of an expression?</li>
       <p>
-				Replace this with you answer
+				JS followes the mathematics order of operations; multilpy, divide, addition and subtraction. 
+        The parentheses forces JS to calculate the values inside first. 
+
 			</p>
-      <li>How do we limit floating-point numbers to a given number of decimals?</li>
+      <li>3. How do we limit floating-point numbers to a given number of decimals?</li>
       <p>
-				Replace this with you answer
+        By using toFixed(n), which rounds the number to n decimals and returns it as a string. 
+        If we need to keep the value as a number, we use Math.round(number * 100) / 100, where 100 gives two decimals. 
 			</p>
-      <li>How can we compare two floating-point values to see if they are equal (is 12.199999 the same as 12.2)?</li>
-      <p>
-				Replace this with you answer
+      <li>4. How can we compare two floating-point values to see if they are equal (is 12.199999 the same as 12.2)?</li>
+      <p> 
+        By using comparison operator such as === to check the return value. 
+        When you you use === it will return as FALSE if we dont convert the decimals or change the code. 
+        
 			</p>
-      <li>What do comparison operators return, and how can we check if they are FALSE or TRUE?</li>
+      <li>5. What do comparison operators return, and how can we check if they are FALSE or TRUE?</li>
       <p>
-				Replace this with you answer
+        Comparison operators return "TRUE" or "FALSE" only. 
+        We use === to ask if it is exactly the same (including if its a string or a nubmer)
+        We use !== to ask if its not the same (also including string or number)
+        
 			</p>
-      <li>How does the Math.random() function work, and what can it be used for?</li>
+      <li>6. How does the Math.random() function work, and what can it be used for?</li>
       <p>
-				Replace this with you answer
+				Math.Random gives a random decimal number up to 1 (0.9999999...)
+        To get a bigger number than this we need to multiply Math.random with 
+        the maximum value of you choice + 1.
+        This can be used for generating random numbers. 
+
 			</p>
-      <li>What is modulus (%), and when do we need this operator in mathematical operations?</li>
+      <li>7. What is modulus (%), and when do we need this operator in mathematical operations?</li>
       <p>
-				Replace this with you answer
+				Modulus (%) gives you the remainder after a division. 131 % 7 = 5 because 7 goes up in 131 18 times (126). 
+        Leftover is 5, and modulus finds this value without further calculations. 
+        If i were to find how many weeks are leftover from a year i would use 269 weeks/52 weeks i a year =5. and then modulus 269 % 52 = 9. 
+        Answer 5 years, 9 weeks. 
+        Modulus can be used for finding the remaining leftover value instead of spitting the value in decimals. 
+        But it only returns the leftover up to the set value, not the whole numbers. 
+
 			</p>
     </ol>
 		<script type="module" src="./task_2-2.mjs" defer></script>
