@@ -10,8 +10,28 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+
+          <li> 1. In part 1, is it possible to solve the problem using a single "for" loop? </li>
+
+          <p>Ja, en for-løkke kan håndtere flere variabler samtidig, for eksempel let i = 1, j = 10; i &lt;= 10; i++, j--. Da må Linje 1 og Linje 2 bygges i hver sin variabel inne i løkken og skrives ut etter løkken, i stedet for å nullstille én variabel.</p>
+
+          <li>2. In part 2, can we create what is known as an "infinite" loop within the condition of the "while" loop? Describe what would or would not be necessary to achieve this. Provide a thorough explanation of your answer.<li>
+
+
+          <p>Ja, en infinite løkke vil oppstå hvis betingelsen i whileløkken aldri blir falsk. En whileløkke kjører så lenge betingelsen er sann (true). For å unngå en infinite løkke må noe inne i løkken endre betingelsen slik at den til slutt blir falsk, eller så må løkken stoppes med break.</p>
+
+         <li> 3. Discuss briefly how quickly or slowly a computer might be able to compute this, considering the number of guesses and the time it takes. How does the program behave while it is guessing? Can the program perform other tasks concurrently? </li>
+
+         <p>Datamaskiner kan gjøre millioner av gjetninger i sekundet. Selv om programmet trenger hundretusenvis av forsøk, tar det bare noen millisekunder. Antall gjetninger varierer fra gang til gang fordi tallene er tilfeldige, og derfor blir tiden den bruker også litt variabel. 
+
+          Programmet kjører while-løkken uten pause til while løkken har funnet en falsk verdi. JavaScript kan bare utføre 1 oppgave om gangen, så man kan ikke klikke på noe, og ingenting vises på siden før løkken er kjørt og resultatet printes ut.</p>
+
+
+         <li>4. Explain the relationship between rows and columns in nested "for" loops. Can we, for instance, change the order, considering rows to be innermost or columns to be innermost, or does this not matter?</li>
+
+      <p>Forholdene mellom dem har betydning for hvordan tabellen ser ut i html. Det er fordi den indre løkken kjører ferdig før den ytre går videre. for eksempel kan man bytte rekkefølgen, men da vil tabellen konverteres til å vise kolonner nedover og rader bortover. for å beholde strukturen på tabeller må row være utenfor og col være inni.</p>
+
+
     </ol>
     <script type="module" src="./task_3-2.mjs" defer></script>
   </body>
